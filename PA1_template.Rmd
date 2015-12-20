@@ -1,3 +1,4 @@
+
 # Reproducible Research - Assignment 1
 ## By Long Huynh
 ###### 19/12/2015
@@ -39,14 +40,13 @@ Before I began to answer the questions I used reproducible code to import the [d
 ```{r}
 # Load tables up ----------------------------------------------------------
 
-nmUrl <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2FNEI_data.zip"
+nmUrl <- "https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip"
 
-if(!file.exists("exdata_data_NEI_data.zip")){
-    download.file(nmUrl,"exdata_data_NEI_data.zip")
+if(!file.exists("repdata_data_activity.zip")){
+    download.file(nmUrl, "repdata_data_activity.zip")
 }
-
-if(!file.exists("Source_Classification_Code.rds")){
-    unzip("exdata_data_NEI_data.zip")
+if(!file.exists("activity.csv")){
+    unzip("repdata_data_activity.zip")
 }
 
 tblActivity <- read_csv("activity.csv") %>% tbl_df()
