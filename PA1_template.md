@@ -144,7 +144,7 @@ represents the midpoint on the dataset.
         guides(fill = guide_legend(reverse=TRUE))
     chtStepsTakenNaRemoved
 
-![](PA1_Activity_files/figure-markdown_strict/unnamed-chunk-4-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-4-1.png)
 
 1.  *Calculate and report the mean and median of the total number of
     steps taken per day*
@@ -225,7 +225,7 @@ x axis.
         ggtitle("Time series plot of the average number of steps against all days") +
         theme_bw()
 
-![](PA1_Activity_files/figure-markdown_strict/unnamed-chunk-7-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-7-1.png)
 
 1.  *Which 5-minute interval, on average across all the days in the
     dataset, contains the maximum number of steps?*
@@ -326,7 +326,7 @@ highlighted in the code along with my response to the next question.
               axis.title.y = element_text(size = 12))
     chtStepsTakenMedianImputed
 
-![](PA1_Activity_files/figure-markdown_strict/unnamed-chunk-11-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-11-1.png)
 
 I used `ggplot` to create a histogram similar to the one created in
 question 1. I also aligned two vertical lines indicating the mean (red
@@ -341,7 +341,7 @@ down. Please see the 2 histograms together below:
 
     grid.arrange(chtStepsTakenNaRemoved, chtStepsTakenMedianImputed)
 
-![](PA1_Activity_files/figure-markdown_strict/unnamed-chunk-12-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
 
 As you can see when comparing the two histograms together the mean value
 has fallen when imputing median values. There is now a wider variance
@@ -446,7 +446,7 @@ chart across the `Weekday` factor.
               axis.title.x = element_text(size = 12),
               axis.title.y = element_text(size = 12))
 
-![](PA1_Activity_files/figure-markdown_strict/unnamed-chunk-15-1.png)
+![](PA1_template_files/figure-markdown_strict/unnamed-chunk-15-1.png)
 
 The shapes of two plots are different. During the weekday the numbers
 steps tends to peak during the morning and evening (more so in the
